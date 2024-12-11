@@ -122,3 +122,51 @@ nav {
 footer{
     text-align: center;
 }
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#contact-heading{
+    margin-top:10%;
+}
+
+#contact-details-container {
+    width: 450px;
+    border: 2px solid gray;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact-details-container div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#email-container img {
+    height: 2.5rem;
+}
+
+#email-container, #linkedin-container{
+    margin:1rem;
+}
+
+#linkedin-container img {
+    height: 2rem;
+}
+
+#email-container a, #linkedin-container a {
+    color: black;
+}
+
+#email-container a:hover, #linkedin-container a:hover {
+    color: gray;
+    text-decoration: underline;
+}
