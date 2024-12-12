@@ -6,4 +6,4 @@
 - Users can visit my GitHub or LinkedIn profiles.
 
 ## Note
-- I have not made my website full responsive.
+- I have not made my website full responsive. Viewing with bigger screens is recommended.
