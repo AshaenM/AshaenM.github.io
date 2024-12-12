@@ -43,7 +43,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 65vh;
     gap: 20px;
 }
 
@@ -121,6 +121,7 @@ nav {
 
 footer{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 h1{
@@ -169,4 +170,84 @@ h1{
 #email-container a:hover, #linkedin-container a:hover {
     color: gray;
     text-decoration: underline;
+}
+
+#education-logo, #certificate-logo{
+    height: 2rem;
+}
+
+#work-logo{
+    height:2.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#summaries {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.summary-container {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(3px 3px 3px black);
+    transition: 0.4s;
+}
+
+.summary-container:hover{
+    filter: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.summary-container img {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.summary-container h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.summary-container p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#my-description-container {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#education-logo, #certificate-logo{
+    height:2rem;
+}
+
+#experience-logo{
+    height:2.5rem;
 }
