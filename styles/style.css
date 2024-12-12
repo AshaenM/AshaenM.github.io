@@ -58,7 +58,6 @@ nav {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    min-width: 300px;
 }
 
 
@@ -123,7 +122,8 @@ button:hover {
 
 footer{
     text-align: center;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0;
 }
 
 h1{
@@ -362,4 +362,70 @@ main h1 {
     transition: transform 0.2s ease-in-out;
     border-color: black;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav .left a {
+        font-size: 24px;
+    }
+
+    nav .right a {
+        font-size: 18px;
+    }
+
+    #my_details p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 0.6rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #contact-details-container {
+        max-width: 90%;
+    }
+
+    .summary-container {
+        max-width: 100%;
+    }
+
+    .projects {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .right {
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #social-links a img {
+        width: 25px;
+    }
+
+    #contact-details-container{
+        display: block;
+    }
 }
