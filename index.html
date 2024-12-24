@@ -13,6 +13,15 @@
         </script>
     </head>
     <body>
+        <script>
+            function trackDownload() {
+                gtag('event', 'download', {
+                    'event_category': 'CV',
+                    'event_label': 'CV Download',
+                    'value': 1
+                });
+            }
+        </script>
         <header>
             <nav>
                 <div class="left">
@@ -36,7 +45,9 @@
                     <p>Ashaen Manuel</p>
                     <p>Aspiring Game Developer</p>
                     <div id="my_details_buttons">
-                        <button onclick="window.open('assets/cv.pdf')">Download CV</button>
+                        <a href="assets/cv.pdf" download="Ashaen_Manuel_CV" onclick="trackDownload()">
+                            <button type="button">Download CV</button>
+                        </a>
                         <button onclick="location.href='contact.html'">Contact Info</button>
                     </div>
                     <div id="social-links">
@@ -46,6 +57,7 @@
                 </div>
             </div>
         </main>
+        
         <footer>
             Copyright © 2024 Ashaen Manuel. All Rights Reserved.
         </footer>
