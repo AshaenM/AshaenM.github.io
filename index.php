@@ -54,6 +54,13 @@ require_once("settings.php");
 $conn = new mysqli($host, $user, $pswd, $dbnm);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['download_cv'])) {
+    date_default_timezone_set('Asia/Colombo');
+    $timestamp = date('Y-m-d H:i:s');
+
+    $insertStatement = "INSERT INTO logs (timestamp, type_id) VALUES ('$timestamp', '1')";
+
+    $conn->query($insertStatement);
+
     // Provide the file for download
     $file = 'assets/cv.pdf';
 
