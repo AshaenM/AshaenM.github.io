@@ -17,10 +17,12 @@ async function loadData() {
         }
         
         if (!response.ok) {
-            throw new Error('Failed to load data.json');
+            throw new Error(`Failed to load data.json: ${response.status} ${response.statusText}`);
         }
         
         siteData = await response.json();
+        console.log('Data loaded successfully:', siteData);
+        console.log('Projects found:', siteData.projects ? siteData.projects.length : 0);
         renderContent();
     } catch (error) {
         console.error('Error loading data:', error);
@@ -30,15 +32,28 @@ async function loadData() {
             heroBio.textContent = 'Unable to load content. Please refresh the page.';
             heroBio.style.color = '#ef4444';
         }
+        // Also show error in projects section
+        const projectsGrid = document.getElementById('projects-grid');
+        if (projectsGrid) {
+            projectsGrid.innerHTML = `<p style="text-align: center; color: #ef4444; grid-column: 1 / -1;">Error loading projects. Please check the browser console for details.</p>`;
+        }
     }
 }
 
 function renderContent() {
     renderHero();
+    renderAbout();
     renderSkills();
     renderProjects();
     renderExperience();
     renderContact();
+}
+
+function renderAbout() {
+    const aboutDescription = document.getElementById('about-description');
+    if (aboutDescription && siteData.personal) {
+        aboutDescription.textContent = siteData.personal.bio || 'Loading...';
+    }
 }
 
 function renderHero() {
@@ -100,12 +115,22 @@ function renderSkills() {
 
 function renderProjects() {
     const projectsGrid = document.getElementById('projects-grid');
-    if (!projectsGrid || !siteData.projects) return;
+    if (!projectsGrid) {
+        console.error('Projects grid element not found');
+        return;
+    }
+    
+    if (!siteData.projects || siteData.projects.length === 0) {
+        projectsGrid.innerHTML = '<p style="text-align: center; color: var(--text-muted); grid-column: 1 / -1;">No projects found. Please add projects to data.json</p>';
+        return;
+    }
+    
+    console.log('Rendering projects:', siteData.projects.length);
     
     projectsGrid.innerHTML = siteData.projects.map(project => `
         <div class="project-card" data-project-id="${project.id}">
             <div class="project-image-wrapper">
-                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <img src="${project.image}" alt="${project.title}" class="project-image" onerror="this.src='assets/placeholder.png'; this.onerror=null;">
                 <div class="project-overlay">
                     <div class="project-links">
                         ${project.github ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>` : ''}
@@ -118,7 +143,7 @@ function renderProjects() {
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
                 <div class="project-tech">
-                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                    ${project.technologies ? project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('') : ''}
                 </div>
             </div>
         </div>
@@ -131,6 +156,22 @@ function renderProjects() {
             const projectId = parseInt(projectCard.dataset.projectId);
             openProjectModal(projectId);
         });
+    });
+    
+    // Re-observe project cards for animations
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    document.querySelectorAll('.project-card').forEach(card => {
+        observer.observe(card);
     });
 }
 
@@ -315,7 +356,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    document.querySelectorAll('.section, .project-card, .timeline-item').forEach(el => {
+    // Observe sections and timeline items (projects will be observed after they're rendered)
+    document.querySelectorAll('.section, .timeline-item').forEach(el => {
         observer.observe(el);
     });
 });

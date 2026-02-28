@@ -619,8 +619,9 @@ body {
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
+    /* Start visible, will animate in if observer is available */
 }
 
 .project-card.animate-in {
