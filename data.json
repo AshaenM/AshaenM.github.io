@@ -1,0 +1,123 @@
+{
+  "personal": {
+    "name": "Ashaen Manuel",
+    "title": "Aspiring Game Developer",
+    "bio": "I build games and thoughtful tools that make complex ideas feel intuitive—often with chessboards, quantum twists, and a lot of curiosity.",
+    "email": "ashaenmanuel41@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ashaenmanuel/",
+    "github": "https://github.com/AshaenM",
+    "profileImage": "assets/me_1.png"
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Programming",
+      "level": "Advanced"
+    },
+    {
+      "name": "Pygame",
+      "category": "Game Development",
+      "level": "Advanced"
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "level": "Intermediate"
+    },
+    {
+      "name": "FastAPI",
+      "category": "Backend",
+      "level": "Intermediate"
+    },
+    {
+      "name": "AI Algorithms",
+      "category": "AI/ML",
+      "level": "Advanced"
+    },
+    {
+      "name": "Game Design",
+      "category": "Design",
+      "level": "Advanced"
+    },
+    {
+      "name": "JavaScript",
+      "category": "Programming",
+      "level": "Intermediate"
+    },
+    {
+      "name": "HTML/CSS",
+      "category": "Frontend",
+      "level": "Advanced"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Quantum Chess",
+      "description": "A unique chess game incorporating quantum mechanics, allowing pieces to exist in superposition and collapse based on player actions.",
+      "image": "assets/qc.png",
+      "technologies": ["Python", "Pygame", "Game Design"],
+      "github": "https://github.com/AshaenM/Quantum-Chess",
+      "category": "Game Development",
+      "highlights": [
+        "Developed quantum measurement techniques to manage piece states",
+        "Evaluated multiple quantum measurement strategies for optimal gameplay",
+        "Showcased expertise in Python and Pygame"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Melbourne Housing Price Predictor",
+      "description": "A user-friendly interface for exploring Melbourne housing data and predicting prices based on various inputs.",
+      "image": "assets/mhp.png",
+      "technologies": ["React", "FastAPI", "Data Analysis"],
+      "github": "https://github.com/AshaenM/Melbourne-Housing-Price-Predictor",
+      "category": "Web Application",
+      "highlights": [
+        "Designed intuitive interface for data exploration",
+        "Implemented predictive models for price analysis",
+        "Utilized React and FastAPI for seamless functionality"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Chess Puzzle Solving AI",
+      "description": "Four different AI systems capable of solving complex chess puzzles using advanced search algorithms.",
+      "image": "assets/cps.png",
+      "technologies": ["Python", "AI Algorithms", "Search Algorithms"],
+      "github": "https://github.com/AshaenM/Chess-Puzzle-Solver",
+      "category": "AI/ML",
+      "highlights": [
+        "Implemented Minimax, DFS, BFS, and Alpha-Beta Pruning",
+        "Designed AI to evaluate multiple move sequences",
+        "Showcased strong grasp of AI methodologies"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "title": "Game Developer",
+      "company": "Your Company Name",
+      "location": "Location",
+      "startDate": "2024",
+      "endDate": "Present",
+      "description": "Description of your role and achievements",
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Your Degree",
+      "institution": "Your University",
+      "location": "Location",
+      "year": "2024",
+      "description": "Relevant coursework or achievements"
+    }
+  ]
+}
