@@ -9,46 +9,32 @@
     "profileImage": "assets/me_1.png"
   },
   "skills": [
-    {
-      "name": "Python",
-      "category": "Programming",
-      "level": "Advanced"
-    },
-    {
-      "name": "Pygame",
-      "category": "Game Development",
-      "level": "Advanced"
-    },
-    {
-      "name": "React",
-      "category": "Frontend",
-      "level": "Intermediate"
-    },
-    {
-      "name": "FastAPI",
-      "category": "Backend",
-      "level": "Intermediate"
-    },
-    {
-      "name": "AI Algorithms",
-      "category": "AI/ML",
-      "level": "Advanced"
-    },
-    {
-      "name": "Game Design",
-      "category": "Design",
-      "level": "Advanced"
-    },
-    {
-      "name": "JavaScript",
-      "category": "Programming",
-      "level": "Intermediate"
-    },
-    {
-      "name": "HTML/CSS",
-      "category": "Frontend",
-      "level": "Advanced"
-    }
+    { "name": "Python", "category": "Programming Languages", "level": "Advanced" },
+    { "name": "PHP", "category": "Programming Languages", "level": "Advanced" },
+    { "name": "JavaScript", "category": "Programming Languages", "level": "Advanced" },
+    { "name": "TypeScript", "category": "Programming Languages", "level": "Intermediate" },
+    { "name": "C#", "category": "Programming Languages", "level": "Intermediate" },
+    { "name": "Kotlin", "category": "Programming Languages", "level": "Intermediate" },
+    { "name": "C++", "category": "Programming Languages", "level": "Intermediate" },
+
+    { "name": "MySQL", "category": "Databases", "level": "Advanced" },
+    { "name": "PostgreSQL", "category": "Databases", "level": "Intermediate" },
+
+    { "name": "HTML/CSS", "category": "Frontend Development", "level": "Advanced" },
+    { "name": "React", "category": "Frontend Frameworks", "level": "Intermediate" },
+    { "name": "Vue.js", "category": "Frontend Frameworks", "level": "Intermediate" },
+    { "name": "Bootstrap", "category": "CSS Frameworks", "level": "Intermediate" },
+
+    { "name": "Node.js", "category": "Backend Runtime", "level": "Intermediate" },
+    { "name": "Django", "category": "Backend Frameworks", "level": "Intermediate" },
+    { "name": "FastAPI", "category": "Backend Frameworks", "level": "Intermediate" },
+    { "name": "Flask", "category": "Backend Frameworks", "level": "Intermediate" },
+
+    { "name": "AI Algorithms", "category": "Artificial Intelligence", "level": "Advanced" },
+
+    { "name": "Docker", "category": "DevOps", "level": "Intermediate" },
+
+    { "name": "Git", "category": "Version Control", "level": "Advanced" }
   ],
   "projects": [
     {
@@ -97,16 +83,33 @@
   "experience": [
     {
       "id": 1,
-      "title": "Game Developer",
-      "company": "Your Company Name",
-      "location": "Location",
-      "startDate": "2024",
-      "endDate": "Present",
-      "description": "Description of your role and achievements",
+      "title": "UX Designer Intern",
+      "company": "Focus Bear",
+      "location": "Melbourne, Australia",
+      "startDate": "July 2025",
+      "endDate": "October 2025",
+      "description": "Designed a focus-enhancement app targeting users with ADHD and similar attention challenges. Created low to high-fidelity wireframes and interactive prototypes in Figma, collaborating closely with the founder, supervisor, designers, and developers in an agile workflow. Iterated on designs based on user-centered feedback to improve engagement, usability, and focus support.",
       "achievements": [
-        "Achievement 1",
-        "Achievement 2",
-        "Achievement 3"
+        "Created wireframes and interactive prototypes in Figma for a focus-assist app targeting ADHD and attention-challenged users",
+        "Collaborated in an agile environment with founders, designers, and developers to iterate designs",
+        "Incorporated user-centered feedback to improve usability, accessibility, and engagement"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "IT Intern",
+      "company": "John Keells Holdings PLC",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "December 2024",
+      "endDate": "February 2025",
+      "description": "Supported IT operations by maintaining systems, developing software prototypes, preparing technical documentation, and assisting with cloud deployment and web hosting on Azure. Applied DevSecOps principles, ensured GDPR and PDPA compliance, and collaborated with cross-functional teams to improve processes and enhance problem-solving and documentation skills.",
+      "achievements": [
+        "Developed sample software prototypes aligned with real-time business requirements, adhering to coding best practices and debugging techniques",
+        "Assisted in preparing technical documentation, including RFP and SRS documents, to support software development and business analysis",
+        "Gained hands-on experience in integrating DevSecOps principles into the software development lifecycle",
+        "Supported cloud deployment and web hosting on Azure, including server configuration and domain management",
+        "Evaluated IT processes to ensure compliance with GDPR and PDPA standards, strengthening data protection practices",
+        "Collaborated with cross-functional teams, improving communication, teamwork, and adaptability in a professional corporate environment"
       ]
     }
   ],
