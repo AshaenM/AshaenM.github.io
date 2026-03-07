@@ -6,7 +6,7 @@
     "email": "ashaenmanuel41@gmail.com",
     "linkedin": "https://www.linkedin.com/in/ashaenmanuel/",
     "github": "https://github.com/AshaenM",
-    "profileImage": "assets/me_1.png"
+    "profileImage": "assets/me.png"
   },
   "skills": [
     { "name": "Python", "category": "Programming Languages", "level": "Advanced" },
