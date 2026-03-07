@@ -112,16 +112,33 @@
         "Evaluated IT processes to ensure compliance with GDPR and PDPA standards, strengthening data protection practices",
         "Collaborated with cross-functional teams, improving communication, teamwork, and adaptability in a professional corporate environment"
       ]
+    },
+    {
+      "id": 3,
+      "title": "Room Attendant",
+      "company": "Sage Hotels Ringwood",
+      "location": "Melbourne, Australia",
+      "startDate": "May 2023",
+      "endDate": "Present",
+      "description": "Employed as a Room Attendant since my first semester of my university degree, using this role as my primary paid position to support myself financially while I studied full-time. This role has strengthened essential professional skills including responsibility, reliability, attention to detail, adaptability, and time management in a fast-paced hospitality environment.",
+      "achievements": [
+        "Maintain high standards of cleanliness and presentation across guest rooms while adhering to strict hotel quality and hygiene standards",
+        "Develop strong time management skills by efficiently completing assigned tasks within tight schedules and daily operational targets",
+        "Demonstrate reliability and professionalism by consistently balancing full-time university studies with ongoing employment",
+        "Collaborate effectively with team members and supervisors to ensure smooth hotel operations and consistent service quality",
+        "Build attention to detail by ensuring guest rooms meet hotel standards and contribute to positive guest experiences",
+        "Adapt quickly to changing priorities and workloads in a fast-paced and dynamic work setting"
+      ]
     }
   ],
   "education": [
     {
       "id": 1,
-      "degree": "Your Degree",
-      "institution": "Your University",
-      "location": "Location",
-      "year": "2024",
-      "description": "Relevant coursework or achievements"
+      "degree": "Bachelor of Computer Science",
+      "institution": "Swinburne University of Technology, Hawthorn",
+      "location": "Melbourne, Australia",
+      "year": "2023-2025",
+      "description": "Studied core computer science principles including software engineering, algorithms, data structures, and system design. Developed skills not only in building software but also in designing strong technical ideas, planning solutions before development, and deploying and maintaining applications in real-world environments. Academic projects involved full-stack web development, database systems, and modern programming practices. Completing this degree in Australia also strengthened my independence and adaptability, as I balanced university studies with work while managing day-to-day responsibilities such as living independently and supporting myself."
     }
   ]
 }

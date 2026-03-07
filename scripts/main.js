@@ -46,6 +46,7 @@ function renderContent() {
     renderSkills();
     renderProjects();
     renderExperience();
+    renderEducation();
     renderContact();
 }
 
@@ -242,6 +243,34 @@ function renderExperience() {
                         ${exp.achievements.map(ach => `<li>${ach}</li>`).join('')}
                     </ul>
                 ` : ''}
+            </div>
+        </div>
+    `).join('');
+}
+
+function renderEducation() {
+    const educationTimeline = document.getElementById('education-timeline');
+    if (!educationTimeline || !siteData.education) return;
+
+    if (siteData.education.length === 0) {
+        educationTimeline.innerHTML = `
+            <div class="timeline-empty">
+                <p>Education entries will appear here. Edit data.json to add your education.</p>
+            </div>
+        `;
+        return;
+    }
+
+    educationTimeline.innerHTML = siteData.education.map(education => `
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3 class="timeline-title">${education.degree}</h3>
+                    <span class="timeline-company">${education.institution}</span>
+                </div>
+                <span class="timeline-date">${education.year}${education.location ? ` • ${education.location}` : ''}</span>
+                <p class="timeline-description">${education.description}</p>
             </div>
         </div>
     `).join('');
