@@ -52,7 +52,7 @@ function renderContent() {
 function renderAbout() {
     const aboutDescription = document.getElementById('about-description');
     if (aboutDescription && siteData.personal) {
-        aboutDescription.textContent = siteData.personal.bio || 'Loading...';
+        aboutDescription.textContent = siteData.personal.about || 'Loading...';
     }
 }
 
